@@ -1,11 +1,30 @@
 # README
 
+
+exo by khalil et salim
+
+
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
 * Ruby version
+
+
+
+
+https://morning-savannah-12202.herokuapp.com/
+
+
+
+
+
 
 * System dependencies
 
