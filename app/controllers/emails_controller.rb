@@ -15,8 +15,8 @@ class EmailsController < ApplicationController
 
 
   def destroy
-    @email = Email.find(params[:id])
-    @email.destroy
+    @emails = Email.all
+    @email = Email.find(params[:id]).destroy
     
     respond_to do |format|
        format.html { redirect_to email_url }

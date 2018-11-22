@@ -1,4 +1,4 @@
-<h1>Emails#index</h1>
+<h1>C'est de l'anglais mais ta traduction auto pour le FR c'est mieux</h1>
 
 <div class='row'> 
 	<div class='email_container col-4'>
@@ -6,9 +6,9 @@
 			<ul>
 				<% @emails.each do |email|%>
 					<div class = "mail">
-				<li id='object'>
-				<%= email.object%> 
-				<%= link_to 'clique here', email_path(email.id), remote:true, :class => "click" %>
+					<li id='<%= email.id %>' class: 'delete_email'>
+					<%= email.object%> 
+				<%= link_to 'clique here', email_path(email.id), remote:true %>
 				</div>
 				</li>
 				<% end %>

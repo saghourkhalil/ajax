@@ -1,5 +1,5 @@
-$('.delete_email').bind('ajax:success', function() {
-   $(this).closest('li').fadeOut();
-   $(this).closest('li').fadeOut();
-
+$(document).ready(function() {
+  $(this).closest('<%= j render "emails/body"%>').fadeOut();
+  $('#<%= @email.id %>').hide();
+  $('.body_mailer').hide('<%= j render "emails/body"%>')
 });
