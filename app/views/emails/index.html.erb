@@ -1,0 +1,20 @@
+<h1>Emails#index</h1>
+
+<div class='row'> 
+	<div class='email_container col-4'>
+		<div class='email '>
+			<ul>
+				<% @emails.each do |email|%>
+					<div class = "mail">
+				<li id='object'>
+				<%= email.object%> 
+				<%= link_to 'clique here', email_path(email.id), remote:true, :class => "click" %>
+				</div>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<div class='body_mailer col-4'>
+	</div>
+</div>
